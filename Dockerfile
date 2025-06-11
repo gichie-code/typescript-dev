@@ -1,7 +1,12 @@
-FROM node:20
+FROM node:18-alpine
 
-WORKDIR /workspace
+WORKDIR /app
 
-RUN npm install -g typescript
+COPY package*.json ./
+RUN npm install
 
-CMD [ "bash" ]
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

@@ -1,4 +1,30 @@
+# node_modulesはDocker内で再構築するため不要
 node_modules
+
+# 出力ディレクトリ
 dist
+build
+
+# Git
+.git
+.gitignore
+
+# Docker設定自身（Dockerfileをコピーしないようにするなら）
+Dockerfile
+Dockerfile.dev
+.dockerignore
+docker-compose.yml
+
+# エディタ/OS固有ファイル
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# テストキャッシュやログ
+coverage
 *.log
+
+# 環境変数
 .env
+.env.*

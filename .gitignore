@@ -1,4 +1,23 @@
-node_modules
-dist
+# Node.js 関連
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json.* # 一時的な破損ファイルの除外用
+
+# TypeScript / Vite
+dist/
+build/
+*.tsbuildinfo
+
+# VSCode / IDE関連
+.vscode/
+.idea/
+
+# Docker関連
 .env
-*.log
+.dockerignore
+
+# OS・エディタ
+.DS_Store
+Thumbs.db

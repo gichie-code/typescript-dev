@@ -1,18 +1,13 @@
 {
-    "name": "typescript-dev",
-    "version": "1.0.0",
-    "description": "TypeScript development environment",
-    "main": "dist/index.js",
-    "scripts": {
-      "start": "node dist/index.js",
-      "build": "tsc",
-      "dev": "ts-node src/index.ts"
-    },
-    "author": "",
-    "license": "MIT",
-    "devDependencies": {
-      "typescript": "^5.0.0",
-      "ts-node": "^10.0.0"
-    }
+  "name": "typescript-dev",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
   }
-  
+}
