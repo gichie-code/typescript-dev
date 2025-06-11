@@ -25,7 +25,7 @@ cd typescript-dev
 Dockerコンテナをビルドして起動する
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ブラウザまたはAPIクライアントで http://localhost:3000 にアクセス（もしAPIやWebサーバーがある場合）。
@@ -41,13 +41,13 @@ docker-compose up --build
 コンテナ停止
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 コンテナ内に入る（シェルを開く）
 
 ```bash
-docker-compose exec app sh
+docker compose exec app sh
 ```
 
 ## 注意点
@@ -64,8 +64,8 @@ Q. npmやNode.jsをローカルにインストールする必要はあります�
 Q. 依存パッケージの追加や更新はどうすればいいですか？
 → package.json を更新後、コンテナを再ビルドしてください。
 
-    docker-compose build
-    docker-compose up
+    docker compose build
+    docker compose up
 ```
 
 ## ライセンス
